@@ -1,21 +1,28 @@
 ---
-const {img, title, author} = Astro.props;
+const {img, title, author, type} = Astro.props;
 ---
 
 <div class="card">
-    <img src={img} alt="">
+    <img src={img} alt={title} class={type === "circle" ? "circle" : "square"} />
   <h3>{title}</h3>
   <p>{author}</p>
 </div>
 
+
+
+
+
+
+
+
+
+
+
 <style>
 .card {
-  width: 100px; 
+  width: 150px; 
   height: 200px; 
   padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Prevents content from spilling */
   display: flex;
   flex-direction: column;
   align-items:baseline;
@@ -27,9 +34,14 @@ const {img, title, author} = Astro.props;
   height: auto; 
   max-height: 70%; 
   object-fit: cover; 
-  border-radius: 5px;
 }
 
+  .circle {
+    border-radius: 50%;
+  }
+    .square {
+    border-radius: 5px;
+  }
 
 
  

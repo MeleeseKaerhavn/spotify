@@ -1,3 +1,7 @@
+---
+import Header from "../components/Header.astro";
+---
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,9 +11,8 @@
 		<title>Astro Basics</title>
 	</head> 
 	<body>
-		<header>
-			<slot name="header" />
-		</header>
+		<Header />
+		
 		<div class="container">
 			<aside class="sidebar">
 				<slot name="sidebar" /> 
@@ -20,6 +23,9 @@
 				<slot /> 
 			</main>
 		</div>
+		<footer>
+
+		</footer>
 	</body>
 
 	<style>
@@ -36,8 +42,13 @@
 			height: 100%;
 			background-color: var(--background);
 			color: var(--textcolor);
+			font-family: Arial, Helvetica, sans-serif;
 		}
+		
 
+
+
+		/* ****Main styling************* */
 	
 		.container {
 			display: grid;
@@ -54,6 +65,7 @@
 	
 		.main-content {
 			padding: 20px;
+			
 		}
 	</style>
 </html>
