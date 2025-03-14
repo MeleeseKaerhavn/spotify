@@ -1,0 +1,24 @@
+---
+import Card from "../components/Card.astro";
+---
+
+<div class="grid">
+  <Card title="Bangerz" img="https://via.assets.so/album.png?id=1..." author="Miley Cyrus" type="circle" />
+  <Card title="Bangerz" img="https://via.assets.so/album.png?id=2..." author="Miley Cyrus" type="circle" />
+  <Card title="Bangerz" img="https://via.assets.so/album.png?id=15..." author="Miley Cyrus" type="circle" />
+  <Card title="Bangerz" img="https://via.assets.so/album.png?id=4..." author="Miley Cyrus" type="circle" />
+  <Card title="Bangerz" img="https://via.assets.so/album.png?id=5..." author="Miley Cyrus" type="circle" />
+  <Card title="Bangerz" img="https://via.assets.so/album.png?id=6..." author="Miley Cyrus" type="circle" />
+</div>
+
+  
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust based on number of cards */
+    
+    padding: 20px;
+  }
+</style>
+

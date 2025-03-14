@@ -1,0 +1,62 @@
+<header class="header">
+    <div class="logo">
+        <img src="../../public/logo.png" alt="Spotify Logo" />
+    </div>
+    <input type="text" placeholder="Hvad vil du afspille?" class="search" />
+    <div class="header-links">
+        <a href="#">Premium</a>
+        <a href="#">Support</a>
+        <a href="#">Download</a>
+        <a href="#">Tilmeld dig</a>
+        <button class="login-btn">Log på</button>
+    </div>
+</header>
+
+
+<style>
+    /***********Header Styling************* */ 
+		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: black;
+			padding: 10px 20px;
+			top: 0;
+			width: 97%;
+		}
+
+		.logo img {
+			height: 30px;
+		}
+
+		.search {
+			width: 300px;
+			padding: 8px;
+			border-radius: 20px;
+			border: none;
+			outline: none;
+            background-color: rgba(30, 30, 30, 1);
+            color: white;
+		}
+
+		.header-links {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+		}
+
+		.header-links a {
+			color: white;
+			text-decoration: none;
+			font-size: 14px;
+		}
+
+		.login-btn {
+			background: white;
+			color: black;
+			border: none;
+			padding: 8px 15px;
+			border-radius: 20px;
+			cursor: pointer;
+		}
+</style>
